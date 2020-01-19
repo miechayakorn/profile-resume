@@ -17,7 +17,10 @@
                   Resume
                 </a>
                 <div class="card-avatar">
-                  <img class="img" src="https://www.miechayakorn.tk/pic/miechayakorn.jpg" />
+                  <img
+                    class="img"
+                    src="https://www.miechayakorn.tk/pic/miechayakorn.jpg"
+                  />
                 </div>
 
                 <div class="table">
@@ -26,7 +29,7 @@
                     I am a beginner developer 🧸
                   </h6>
                   <p class="card-description">
-                    King Mongkut's University of Technology Thonburi <br />
+                    School of Information Technology, KMUTT <br />
                     ===== <br />
                     <i class="fa fa-map-marker ">
                       40/224 Rama II Rd, Bang Mot, Chom Thong, Bangkok 10150</i
@@ -91,10 +94,15 @@
       <article class="col-md-12">
         <div class="row">
           <div class="container">
-            <div class="card-deck mb-4">
+            <!-- <div class="card-deck mb-4">
               <div class="card card-blog animated fadeInUp delay-2s">
                 <div class="card-image">
-                  <a href="#"> <img class="img" src="https://www.miechayakorn.tk/pic/Fruity.PNG" /> </a>
+                  <a href="#">
+                    <img
+                      class="img"
+                      src="https://www.miechayakorn.tk/pic/Fruity.PNG"
+                    />
+                  </a>
                   <div class="ripple-cont"></div>
                 </div>
                 <div class="table">
@@ -131,7 +139,12 @@
               </div>
               <div class="card card-blog animated fadeInUp delay-2s">
                 <div class="card-image">
-                  <a href="#"> <img class="img" src="https://www.miechayakorn.tk/pic/BBM.PNG" /> </a>
+                  <a href="#">
+                    <img
+                      class="img"
+                      src="https://www.miechayakorn.tk/pic/BBM.PNG"
+                    />
+                  </a>
                   <div class="ripple-cont"></div>
                 </div>
                 <div class="table">
@@ -210,33 +223,38 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card-deck mb-4">
+            </div> -->
+            <div class="card-deck mb-4" v-for="(project, index) in projects" :key="index">
+                <!-- {{ checkProject(index) ? '<div class="card-deck mb-4">' : '' }} -->
+                
+
               <div class="card card-blog animated fadeInUp delay-2s">
                 <div class="card-image">
                   <a href="#">
-                    <img class="img" src="https://placehold.it/500x270" />
+                    <img
+                      class="img"
+                      :src="project.Image"
+                    />
                   </a>
                   <div class="ripple-cont"></div>
                 </div>
                 <div class="table">
                   <h6 class="category text-success">
-                    <i class="fa fa-university"></i> INT.....
+                    <i class="fa fa-university"></i> {{project.Course}}
                   </h6>
                   <h4 class="card-caption">
-                    TEXT
+                    {{project.Name}}
                   </h4>
-                  <p class="card-description">description</p>
+                  <p class="card-description">
+                    {{project.Description}}
+                  </p>
                   <div class="col text-center">
-                    <a
-                      href="https://github.com/miechayakorn/BBMProject"
-                      target="_blank"
-                    >
+                    <a :href="project.URL" target="_blank">
                       <button
                         class="btn btn-github"
                         style="background-color: #554488; color: #f5f5f5;"
                       >
-                        View Github
+                        {{project.Button}}
                       </button>
                     </a>
                   </div>
@@ -244,98 +262,53 @@
                     <div class="author">
                       <p class="card-text">
                         <small class="text-muted"
-                          >Project - 2nd year student</small
+                          >{{project.Year}}</small
                         >
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card card-blog animated fadeInUp delay-2s">
-                <div class="card-image">
-                  <a href="#">
-                    <img class="img" src="https://placehold.it/500x270" />
-                  </a>
-                  <div class="ripple-cont"></div>
-                </div>
-                <div class="table">
-                  <h6 class="category text-success">
-                    <i class="fa fa-university"></i> INT.....
-                  </h6>
-                  <h4 class="card-caption">
-                    TEXT
-                  </h4>
-                  <p class="card-description">description</p>
-                  <div class="col text-center">
-                    <a
-                      href="https://github.com/miechayakorn/BBMProject"
-                      target="_blank"
-                    >
-                      <button
-                        class="btn btn-github"
-                        style="background-color: #554488; color: #f5f5f5;"
-                      >
-                        View Github
-                      </button>
-                    </a>
-                  </div>
-                  <div class="ftr">
-                    <div class="author">
-                      <p class="card-text">
-                        <small class="text-muted"
-                          >Project - 2nd year student</small
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card card-blog animated fadeInUp delay-2s">
-                <div class="card-image">
-                  <a href="#">
-                    <img class="img" src="https://placehold.it/500x270" />
-                  </a>
-                  <div class="ripple-cont"></div>
-                </div>
-                <div class="table">
-                  <h6 class="category text-success">
-                    <i class="fa fa-university"></i> INT.....
-                  </h6>
-                  <h4 class="card-caption">
-                    TEXT
-                  </h4>
-                  <p class="card-description">description</p>
-                  <div class="col text-center">
-                    <a
-                      href="https://github.com/miechayakorn/BBMProject"
-                      target="_blank"
-                    >
-                      <button
-                        class="btn btn-github"
-                        style="background-color: #554488; color: #f5f5f5;"
-                      >
-                        View Github
-                      </button>
-                    </a>
-                  </div>
-                  <div class="ftr">
-                    <div class="author">
-                      <p class="card-text">
-                        <small class="text-muted"
-                          >Project - 2nd year student</small
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+
+                <!-- {{ index/3==0 ? '</div>' : '' }} -->
             </div>
           </div>
         </div>
+        
       </article>
     </div>
   </div>
 </template>
+
+<script>
+import axios from "axios";
+export default {
+  name: "app",
+  data() {
+    return {
+      projects: null
+    };
+  },
+  async mounted() {
+    const urlProject =
+        "https://script.google.com/macros/s/AKfycbynRlK1sysszgfiSj095HOfjF9yWIkEWQ_xunJfKyJw0qZD5EA2/exec?path=/product";
+      console.log(urlProject);
+
+      await axios.get(urlProject).then(res => {
+        this.projects = res.data.items;
+      });
+
+      console.log(this.projects)
+  },
+  methods: {
+    checkProject(index){
+      console.log(index)
+    }
+  },
+};
+</script>
+
 
 <style>
 body {
