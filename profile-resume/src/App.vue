@@ -9,10 +9,19 @@
               <div class="card card-profile animated fadeInUp">
                 <a
                   style="position: absolute;
+              left: 0;
+              top: 0;"
+                  class="p-2"
+                  href="https://drive.google.com/file/d/1AuTRmSVV4s78fV-oI8wP8Nav-j2SOPOR/view?usp=sharing"
+                >
+                  Transcript
+                </a>
+                <a
+                  style="position: absolute;
               right: 0;
               top: 0;"
                   class="p-2"
-                  href="https://www.miechayakorn.tk/pic/miechayakorn.jpg"
+                  href="https://www.miechayakorn.tk/pic/resume.jpg"
                 >
                   Resume
                 </a>
@@ -31,6 +40,7 @@
                   <p class="card-description">
                     School of Information Technology, KMUTT <br />
                     ===== <br />
+                    <i class="fa fa-phone "> 088-9306924</i>
                     <i class="fa fa-map-marker ">
                       40/224 Rama II Rd, Bang Mot, Chom Thong, Bangkok 10150</i
                     >
@@ -94,188 +104,48 @@
       <article class="col-md-12">
         <div class="row">
           <div class="container">
-            <!-- <div class="card-deck mb-4">
-              <div class="card card-blog animated fadeInUp delay-2s">
-                <div class="card-image">
-                  <a href="#">
-                    <img
-                      class="img"
-                      src="https://www.miechayakorn.tk/pic/Fruity.PNG"
-                    />
-                  </a>
-                  <div class="ripple-cont"></div>
-                </div>
-                <div class="table">
-                  <h6 class="category text-success">
-                    <i class="fa fa-university"></i> INT106 WEB technology
-                  </h6>
-                  <h4 class="card-caption">
-                    Fruity shop
-                  </h4>
-                  <p class="card-description">
-                    โปรเจครายวิชา INT106 WEB technology เป็นวิชาที่ฝึกเขียน html
-                    ร่วมกับ javascript
-                  </p>
-                  <div class="col text-center">
-                    <a href="https://pro017.miechayakorn.tk/" target="_blank">
-                      <button
-                        class="btn btn-github"
-                        style="background-color: #554488; color: #f5f5f5;"
-                      >
-                        View WEB
-                      </button>
-                    </a>
-                  </div>
-                  <div class="ftr">
-                    <div class="author">
-                      <p class="card-text">
-                        <small class="text-muted"
-                          >Project - 1st year student</small
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card card-blog animated fadeInUp delay-2s">
-                <div class="card-image">
-                  <a href="#">
-                    <img
-                      class="img"
-                      src="https://www.miechayakorn.tk/pic/BBM.PNG"
-                    />
-                  </a>
-                  <div class="ripple-cont"></div>
-                </div>
-                <div class="table">
-                  <h6 class="category text-success">
-                    <i class="fa fa-university"></i> INT.....
-                  </h6>
-                  <h4 class="card-caption">
-                    BBMProject
-                  </h4>
-                  <p class="card-description">
-                    โปรเจคเว็บ Condominium - เป็น Java web app
-                    ไว้สำหรับจองซื้อห้องของ Condominium เป็นโปรเจคของรายวิชา
-                    Java Web App. และ ใช้ DB ของ derby ซึ่งใช้อยู่ในโปรแกรม
-                    NetBeans
-                  </p>
-                  <div class="col text-center">
-                    <a
-                      href="https://github.com/miechayakorn/BBMProject"
-                      target="_blank"
-                    >
-                      <button
-                        class="btn btn-github"
-                        style="background-color: #554488; color: #f5f5f5;"
-                      >
-                        View Github
-                      </button>
-                    </a>
-                  </div>
-                  <div class="ftr">
-                    <div class="author">
-                      <p class="card-text">
-                        <small class="text-muted"
-                          >Project - 2nd year student</small
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card card-blog animated fadeInUp delay-2s">
-                <div class="card-image">
-                  <a href="#">
-                    <img class="img" src="https://placehold.it/500x270" />
-                  </a>
-                  <div class="ripple-cont"></div>
-                </div>
-                <div class="table">
-                  <h6 class="category text-success">
-                    <i class="fa fa-university"></i> INT.....
-                  </h6>
-                  <h4 class="card-caption">
-                    TEXT
-                  </h4>
-                  <p class="card-description">description</p>
-                  <div class="col text-center">
-                    <a
-                      href="https://github.com/miechayakorn/BBMProject"
-                      target="_blank"
-                    >
-                      <button
-                        class="btn btn-github"
-                        style="background-color: #554488; color: #f5f5f5;"
-                      >
-                        View Github
-                      </button>
-                    </a>
-                  </div>
-                  <div class="ftr">
-                    <div class="author">
-                      <p class="card-text">
-                        <small class="text-muted"
-                          >Project - 2nd year student</small
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-            <div class="card-deck mb-4" v-for="(project, index) in projects" :key="index">
-                <!-- {{ checkProject(index) ? '<div class="card-deck mb-4">' : '' }} -->
-                
-
-              <div class="card card-blog animated fadeInUp delay-2s">
-                <div class="card-image">
-                  <a href="#">
-                    <img
-                      class="img"
-                      :src="project.Image"
-                    />
-                  </a>
-                  <div class="ripple-cont"></div>
-                </div>
-                <div class="table">
-                  <h6 class="category text-success">
-                    <i class="fa fa-university"></i> {{project.Course}}
-                  </h6>
-                  <h4 class="card-caption">
-                    {{project.Name}}
-                  </h4>
-                  <p class="card-description">
-                    {{project.Description}}
-                  </p>
-                  <div class="col text-center">
+            <div class="card-deck mb-4">
+              <div class="col-12 col-md-4 mb-md-3" v-for="(project, index) in projects" :key="index">
+                <div class="card card-blog animated fadeInUp delay-2s">
+                  <div class="card-image">
                     <a :href="project.URL" target="_blank">
-                      <button
-                        class="btn btn-github"
-                        style="background-color: #554488; color: #f5f5f5;"
-                      >
-                        {{project.Button}}
-                      </button>
+                      <img class="img" :src="project.Image" />
                     </a>
+                    <div class="ripple-cont"></div>
                   </div>
-                  <div class="ftr">
-                    <div class="author">
-                      <p class="card-text">
-                        <small class="text-muted"
-                          >{{project.Year}}</small
+                  <div class="table">
+                    <h6 class="text-success">
+                      <i class="fa fa-university"></i> {{ project.Course }}
+                    </h6>
+                    <h4 class="card-caption">
+                      {{ project.Name }}
+                    </h4>
+                    <p class="card-description">
+                      {{ project.Description }}
+                    </p>
+                    <div class="col text-center">
+                      <a :href="project.URL" target="_blank">
+                        <button
+                          class="btn btn-github"
+                          style="background-color: #554488; color: #f5f5f5;"
                         >
-                      </p>
+                          {{ project.Button }}
+                        </button>
+                      </a>
+                    </div>
+                    <div class="ftr">
+                      <div class="author">
+                        <p class="card-text">
+                          <small class="text-muted">{{ project.Year }}</small>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-
-                <!-- {{ index/3==0 ? '</div>' : '' }} -->
             </div>
           </div>
         </div>
-        
       </article>
     </div>
   </div>
@@ -292,23 +162,22 @@ export default {
   },
   async mounted() {
     const urlProject =
-        "https://script.google.com/macros/s/AKfycbynRlK1sysszgfiSj095HOfjF9yWIkEWQ_xunJfKyJw0qZD5EA2/exec?path=/product";
-      console.log(urlProject);
+      "https://script.google.com/macros/s/AKfycbynRlK1sysszgfiSj095HOfjF9yWIkEWQ_xunJfKyJw0qZD5EA2/exec?path=/product";
+    console.log(urlProject);
 
-      await axios.get(urlProject).then(res => {
-        this.projects = res.data.items;
-      });
+    await axios.get(urlProject).then(res => {
+      this.projects = res.data.items;
+    });
 
-      console.log(this.projects)
+    console.log(this.projects);
   },
   methods: {
-    checkProject(index){
-      console.log(index)
+    checkProject(index) {
+      console.log(index);
     }
-  },
+  }
 };
 </script>
-
 
 <style>
 body {
