@@ -9,7 +9,7 @@ cd profile-resume/ ;
 yarn serve ;
 ```
 >If you run the first time, you must have a **node_modules** folder before use "yarn serve". 
->Use nodejs [click](https://nodejs.org/en/download/) and this use command line
+>Install [nodejs](https://nodejs.org/en/download/) and use this command line.
 ```
 npm install
 ```
