@@ -18,7 +18,7 @@
               right: 0;
               top: 0;"
               class="p-2"
-              href="https://www.miechayakorn.tk/pic/resume.jpg"
+              href="https://www.miechayakorn.tk/doc/Resume-miechayakorn.pdf"
             >
               Resume
             </a>
