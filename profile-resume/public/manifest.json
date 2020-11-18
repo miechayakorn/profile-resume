@@ -1,0 +1,21 @@
+{
+    "name": "Profile - Chayakorn Pradchayakul",
+    "short_name": "hcare",
+    "theme_color": "#3d3731",
+    "icons": [
+      {
+        "src": "./img/icons/miechayakorn.jpg",
+        "sizes": "192x192",
+        "type": "image/jpg"
+      },
+      {
+        "src": "./img/icons/miechayakorn.jpg",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#3d3731"
+  }
+  
