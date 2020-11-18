@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="container">
+    <div class="container mt-3">
       <h3 class="animated fadeInUp">Profile</h3>
       <profile-card></profile-card>
     </div>
@@ -74,12 +74,8 @@ body {
     #ffa973,
     #ff9d79,
     #fc937f,
-    #f88b85,
     #f1838b,
-    #e47c90,
-    #d67694,
-    #c67196,
-    #b56d97
+    #e47c90
   );
   font-family: "Exo", sans-serif;
   color: #fff;
