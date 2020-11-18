@@ -58,8 +58,6 @@ export default {
     await axios.get(urlProject).then(res => {
       this.projects = res.data.items;
     });
-    console.log(urlProject);
-    console.log(this.projects);
   }
 };
 </script>

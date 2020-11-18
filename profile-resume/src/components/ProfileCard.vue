@@ -27,7 +27,7 @@
             <div class="table">
               <h4 class="card-caption">Chayakorn Pradchayakul</h4>
               <h6 class="card-description text-muted">
-                I am a beginner developer 🐻🧸
+                I am a developer 🐻🧸
               </h6>
               <div class="card-description">
                 School of Information Technology, KMUTT <br />
