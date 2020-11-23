@@ -16,15 +16,23 @@
       <p class="card-description">
         {{ project.Description }}
       </p>
-      <div class="col text-center">
+      <div v-if="project.Button != `can't show`" class="col text-center">
         <a :href="project.URL" target="_blank">
           <button
             class="btn btn-github"
-            style="background-color: #554488; color: #f5f5f5;"
+            style="background-color: #554488; color: #f5f5f5"
           >
             {{ project.Button }}
           </button>
         </a>
+      </div>
+      <div v-else class="col text-center">
+        <button
+          class="btn btn-github"
+          style="background-color: #1e2327; color: #f5f5f5"
+        >
+          {{ project.Button }}
+        </button>
       </div>
       <div class="ftr">
         <div class="author">
@@ -38,9 +46,9 @@
 </template>
 <script>
 export default {
-    name: "card",
-    props: {
-        project : {}
-    },
-}
+  name: "card",
+  props: {
+    project: {},
+  },
+};
 </script>
